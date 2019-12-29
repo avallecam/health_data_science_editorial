@@ -1,6 +1,6 @@
 ---
 title: "Ciencia de Datos en Salud: Aplicaciones en CDC Perú"
-author: "Andree Valle Campos, Bachiller en Genética y Biotecnología. Grupo de Trabajo en Investigación Epidemiológica y Evaluación de Intervenciones Sanitarias. (avallecam\\@gmail.com)"
+author: "Andree Valle Campos, Candidato a Magister en Ciencias de la Investigación Epidemiológica. Grupo de Trabajo en Investigación Epidemiológica y Evaluación de Intervenciones Sanitarias. (avallecam\\@gmail.com)"
 date: '`r Sys.Date()`'
 output: word_document
 bibliography: "20191208-cdc_editorial.bib"
@@ -20,7 +20,7 @@ métodos bioestadísticos y epidemiológicos, y un marco conceptual basado
 en salud pública e inferencia causal.
 En CDC Perú, hay una creciente necesidad por tomar decisiones basadas en el análisis de grandes bases de datos existentes o 
 la adquisición rápida de nueva información de campo.
-Esto ha demandado que los epidemiólogos empiecemos a usar activamente estas nuevas formas de trabajo.
+Esto ha demandado que los epidemiólogos empecemos a usar activamente estas nuevas formas de trabajo.
 En este sentido, aquí presentamos las características de tres herramientas de Software Libre [@lowndes2017our]
 recientemente implementadas en la institución: KoBo Toolbox para 
 la colecta de datos,  R para la limpieza de bases, y paquetes del 
@@ -36,34 +36,35 @@ por otras instituciones, acelerando la actividad científica bajo principios de 
 También permite importar encuestas diseñadas en archivos Excel 
 con formato XLSform [@xlsform2019], modificarlas en línea, usarlas en web o aplicativo móvil 
 (KoBoCollect) [@kobocollect2019] para colectar información sin conexión a internet. 
-En nuestra primera experiencia solo la empleamos como herramienta de digitación de encuestas llenadas a 
-lápiz y papel. Sin embargo, el formato XLSform facilitó la 
-adición de saltos condicionales, tipos de variable y etiquetas de valores, reduciendo este tiempo y 
-facilitando su análisis.
+En nuestra primera experiencia solo la empleamos como herramienta de digitación de encuestas llenadas a lápiz y papel. 
+Sin embargo, el formato XLSform permitió la edición colaborativa via Google Sheets y redujo el tiempo para su distribución. 
+Del mismo modo, la base de datos exportada conservó tipos de variable y etiquetas facilitando su análisis.
 
 <!-- # desarrollo de idea clave 2 -->
-Posterior a ello, todo proceso ejecutado debe ser reproducible, es decir estar escrito en 
-código informático capaz de recrear todos los resultados a partir de los datos originales [@rodriguez2016ciencia].
-Aquí usamos R [@rcoreteam2019], un software estadístico que complementa la ejecución del método científico. Permite importar, limpiar, 
+Posterior a ello, todo proceso realizado debe ser reproducible, es decir estar escrito en 
+código informático capaz de recrear todos los resultados a partir de los datos originales en cualquier momento [@rodriguez2016ciencia].
+Empleamos el software de programación estadística R [@rcoreteam2019] para escribir nuestros procedimientos. 
+En una sola plataforma permite importar, limpiar, 
 analizar y generar reportes en formato de artículos [@rticles2019], presentaciones [@xaringan2019] o pósters [@posterdown2019]. 
 Su disponibilidad de herramientas para la limpieza y resumen de bases [@grolemund2018r] ha permitido 
-integrar múltiples bases de datos de diferentes instituciones con estructuras totalmente heterogéneas.
-Dos proyectos ejemplo son la generación de la lista de Enfermedades Raras o Huérfanas, y 
+integrar múltiples fuentes de información de diferentes instituciones con estructuras totalmente heterogéneas.
+Dos ejemplos son la generación de la lista de Enfermedades Raras o Huérfanas, y 
 la lista de enfermedades priorizadas para el Plan Esencial de Aseguramiento en Salud. 
-Ambos podrán reproducirse en cualquier momento para evaluar la metodología o actualizar su información 
+Ambos podrán reproducirse en cualquier momento para evaluar sus metodologías o actualizarlos 
 en los próximos años ante la disponibilidad de nuevas bases de datos.
 
 <!-- # desarrollo de idea clave 3 -->
 Por otra parte, los análisis más especializados requieren de paquetes de R, 
-los cuales son un conjunto de funciones que extienden la caja de herramientas básica del software. 
-RECON [@recon2019] es una agrupación que crea, integra y evalúa paquetes específicos
-para el análisis en respuesta a brotes, emergencias en salud y crisis humanitarias.
+los cuales son un conjunto de funciones que extienden la caja de herramientas que el software posee por defecto. 
+RECON [@recon2019] es la agrupación que crea, integra y evalúa paquetes específicos
+para el análisis de brotes, emergencias en salud y crisis humanitarias.
 Por ejemplo, los paquetes _incidence_ y _projections_ modelan y proyectan incidencias en periodos cortos de tiempo, 
 respectivamente [@polonsky2019outbreak]. 
 Su amplia disponibilidad de tutoriales [@reconlearn2019] facilitó su rápida implementación en respuesta a la 
 epidemia del Síndrome Guillain Barré del presente año [@munayco2019]. 
 Además, recientes métodos de análisis estadísticos a escala espacial [@moraga2019geospatial]
-permitieron generar mapas con riesgos relativos estimados a nivel distrital y evaluar su asociación con enfermedad diarreica aguda [@sgb2019]. 
+permitieron generar mapas con riesgos relativos estimados a nivel distrital y 
+evaluar su asociación con enfermedad diarreica aguda [@sgb2019]. 
 De la misma forma, se podrán adaptar otros recursos como la generación estandarizada y automatizada de Salas Situacionales 
 empleando el paquete _sitrep_ de la organización internacional R4epis [@r4epis2019].
 
@@ -72,11 +73,13 @@ empleando el paquete _sitrep_ de la organización internacional R4epis [@r4epis2
 En resumen, el CDC Perú ha implementado herramientas de Ciencias de Datos en Salud 
 que han acelerado la colecta, análisis y reporte en respuesta a brotes, epidemias, 
 situaciones de emergencia e investigaciones epidemiológicas. 
-En el corto plazo, los próximos pasos son capacitar y estimular el uso de estas herramientas en 
-la institución y en las distintas Direcciones Regionales. 
-Experiencias similares en otros campos han demostrado que esta transición ha favorecido 
+Finalmente, experiencias similares en otros campos han demostrado que esta transición ha favorecido 
 a la transparencia, el ahorro de esfuerzos y la estandarización de procesos al largo plazo, 
 acortando el tiempo para la toma de decisiones [@lowndes2017our].
+Por ello, los próximos pasos son capacitar y estimular el uso de estas herramientas en 
+la institución y en las distintas Direcciones Regionales. 
+
+
 
 # Referencias
 
