@@ -79,6 +79,9 @@ acortando el tiempo para la toma de decisiones [@lowndes2017our].
 Por ello, los próximos pasos son capacitar y estimular el uso de estas herramientas en 
 la institución y en las distintas Direcciones Regionales. 
 
+El presente editorial ha sido generado usando Rmarkdown [@rmarkdown2018; @rmarkdown2019] 
+y está disponible en GitHub [@cdcdatasci19].
+
 
 
 # Referencias
