@@ -1,12 +1,10 @@
 ---
 title: "Ciencia de Datos en Salud: Aplicaciones en CDC Perú"
-author: "Andree Valle Campos, Bachiller en Genética y Biotecnología. Grupo de Trabajo en Investigación Epidemiológica y Evaluación de Intervenciones en Salud. Centro Nacional de Epidemiología, Prevención y Control de Enfermedades. CDC-Perú."
-date: "26/12/2019"
-output: pdf_document #word_document
+author: "Andree Valle Campos, Bachiller en Genética y Biotecnología. Grupo de Trabajo en Investigación Epidemiológica y Evaluación de Intervenciones Sanitarias. (avallecam\\@gmail.com)"
+date: '`r Sys.Date()`'
+output: word_document
 bibliography: "20191208-cdc_editorial.bib"
 link-citations: yes
-keep_tex: yes
-keep_md: yes
 csl: american-medical-association.csl
 ---
 
@@ -16,16 +14,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- # introducción con presentación de ideas 1, 2, 3 -->
 La Ciencia de Datos en Salud es el trabajo científico realizado para mejorar la colecta, 
-el manejo y el análisis de datos de individuos o poblaciones, con el objetivo de mejorar su salud 
-[@dammann2019health]. Este integra los últimos avances en tecnologías de la información, 
-metodologías para el análisis bioestadístico y epidemiológico, y un componente conceptual basado 
-en salud pública e inferencia causal. Aquí, presentamos las características de tres herramientas de Software Libre [@lowndes2017our]
-recientemente implementadas en CDC Perú: KoBo Toolbox para 
+manejo y análisis de datos de individuos o poblaciones, con el objetivo de mejorar su salud 
+[@dammann2019health]. Este integra tres componentes: tecnologías de la información, 
+métodos bioestadísticos y epidemiológicos, y un marco conceptual basado 
+en salud pública e inferencia causal.
+En CDC Perú, hay una creciente necesidad por tomar decisiones basadas en el análisis de grandes bases de datos existentes o 
+la adquisición rápida de nueva información de campo.
+Esto ha demandado que los epidemiólogos empiecemos a usar activamente estas nuevas formas de trabajo.
+En este sentido, aquí presentamos las características de tres herramientas de Software Libre [@lowndes2017our]
+recientemente implementadas en la institución: KoBo Toolbox para 
 la colecta de datos,  R para la limpieza de bases, y paquetes del 
 R Epidemics Consortium (RECON) para el análisis cuantitativo en respuesta a brotes y epidemias.
 
 <!-- # desarrollo de idea clave 1 -->
-Primero, en situaciones de emergencia, el tiempo entre el diseño y la aplicación de una encuesta es crítico para el diagnóstico e inicio de intervenciones.
+Primero, en situaciones de emergencia, el tiempo entre el diseño y la aplicación de una encuesta es 
+crítico para evaluar hipótesis e implementar medidas de control.
 KoBo Toolbox [@pham2018kobotoolbox] es una plataforma web que 
 reduce este tiempo mediante el acceso a plantillas y medios rápidos de distribución. 
 En comparación a otros softwares, su principal ventaja radica en el acceso a colecciones públicas de instrumentos compartidos 
@@ -33,9 +36,9 @@ por otras instituciones, acelerando la actividad científica bajo principios de 
 También permite importar encuestas diseñadas en archivos Excel 
 con formato XLSform [@xlsform2019], modificarlas en línea, usarlas en web o aplicativo móvil 
 (KoBoCollect) [@kobocollect2019] para colectar información sin conexión a internet. 
-En nuestra primera experiencia nos limitamos a emplearla como herramienta de digitación de encuestas llenadas a 
+En nuestra primera experiencia solo la empleamos como herramienta de digitación de encuestas llenadas a 
 lápiz y papel. Sin embargo, el formato XLSform facilitó la 
-adición de saltos condicionales, tipos de variable y etiquetas de valores, reduciendo el tiempo de digitación y 
+adición de saltos condicionales, tipos de variable y etiquetas de valores, reduciendo este tiempo y 
 facilitando su análisis.
 
 <!-- # desarrollo de idea clave 2 -->
@@ -47,25 +50,28 @@ Su disponibilidad de herramientas para la limpieza y resumen de bases [@grolemun
 integrar múltiples bases de datos de diferentes instituciones con estructuras totalmente heterogéneas.
 Dos proyectos ejemplo son la generación de la lista de Enfermedades Raras o Huérfanas, y 
 la lista de enfermedades priorizadas para el Plan Esencial de Aseguramiento en Salud. 
-Ambos podrán reproducirse en cualquier momento para evaluar la metodología y actualizar su información 
-en próximos años ante la disponibilidad de nuevas bases de datos.
+Ambos podrán reproducirse en cualquier momento para evaluar la metodología o actualizar su información 
+en los próximos años ante la disponibilidad de nuevas bases de datos.
 
 <!-- # desarrollo de idea clave 3 -->
-Por otra parte, los análisis más avanzados y especializados están disponibles en paquetes de R, 
-los cuales son un conjunto de funciones diseñadas por metodólogos y constantemente evaluadas por la comunidad. 
-RECON [@recon2019] es una agrupación de investigadores especializados en el desarrollo integrado de herramientas 
-de análisis en respuesta a brotes, emergencias en salud y crisis humanitarias [@polonsky2019outbreak]. 
-Su amplia disponibilidad de tutoriales [@reconlearn2019] facillitó su rápida implementación en respuesta a la 
-epidemia del Sindrome Guillain Barré del presente año [@munayco2019]. 
+Por otra parte, los análisis más especializados requieren de paquetes de R, 
+los cuales son un conjunto de funciones que extienden la caja de herramientas básica del software. 
+RECON [@recon2019] es una agrupación que crea, integra y evalúa paquetes específicos
+para el análisis en respuesta a brotes, emergencias en salud y crisis humanitarias.
+Por ejemplo, los paquetes _incidence_ y _projections_ modelan y proyectan incidencias en periodos cortos de tiempo, 
+respectivamente [@polonsky2019outbreak]. 
+Su amplia disponibilidad de tutoriales [@reconlearn2019] facilitó su rápida implementación en respuesta a la 
+epidemia del Síndrome Guillain Barré del presente año [@munayco2019]. 
 Además, recientes métodos de análisis estadísticos a escala espacial [@moraga2019geospatial]
-permitieron generar mapas de riesgos relativos estimados a nivel distrital y evaluar su asociación con enfermedad diarréica aguda [@sgb2019]. 
+permitieron generar mapas con riesgos relativos estimados a nivel distrital y evaluar su asociación con enfermedad diarreica aguda [@sgb2019]. 
 De la misma forma, se podrán adaptar otros recursos como la generación estandarizada y automatizada de Salas Situacionales 
 empleando el paquete _sitrep_ de la organización internacional R4epis [@r4epis2019].
 
 <!-- (Otros son forecast para el pronóstico y incidencias mensuales ysurveillance para la detección de anomalías.)-->
 <!-- # cierre -->
 En resumen, el CDC Perú ha implementado herramientas de Ciencias de Datos en Salud 
-que han acelerado la colecta, análisis y reporte en respuesta a brotes, epidemias, situaciones emergencia e investigaciones epidemiológicas. 
+que han acelerado la colecta, análisis y reporte en respuesta a brotes, epidemias, 
+situaciones de emergencia e investigaciones epidemiológicas. 
 En el corto plazo, los próximos pasos son capacitar y estimular el uso de estas herramientas en 
 la institución y en las distintas Direcciones Regionales. 
 Experiencias similares en otros campos han demostrado que esta transición ha favorecido 
