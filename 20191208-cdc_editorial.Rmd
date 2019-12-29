@@ -1,6 +1,6 @@
 ---
 title: "Ciencia de Datos en Salud: Aplicaciones en CDC Perú"
-author: "Andree Valle Campos, Candidato a Magister en Ciencias de la Investigación Epidemiológica. Grupo de Trabajo en Investigación Epidemiológica y Evaluación de Intervenciones Sanitarias. (avallecam\\@gmail.com)"
+author: "Andree Valle Campos, Candidato a Magíster en Ciencias de la Investigación Epidemiológica. Grupo de Trabajo en Investigación Epidemiológica y Evaluación de Intervenciones Sanitarias. (avallecam\\@gmail.com)"
 date: '`r Sys.Date()`'
 output: word_document
 bibliography: "20191208-cdc_editorial.bib"
@@ -37,7 +37,7 @@ También permite importar encuestas diseñadas en archivos Excel
 con formato XLSform [@xlsform2019], modificarlas en línea, usarlas en web o aplicativo móvil 
 (KoBoCollect) [@kobocollect2019] para colectar información sin conexión a internet. 
 En nuestra primera experiencia solo la empleamos como herramienta de digitación de encuestas llenadas a lápiz y papel. 
-Sin embargo, el formato XLSform permitió la edición colaborativa via Google Sheets y redujo el tiempo para su distribución. 
+Sin embargo, el formato XLSform permitió la edición colaborativa vía Google Sheets reduciendo el tiempo de diseño y distribución. 
 Del mismo modo, la base de datos exportada conservó tipos de variable y etiquetas facilitando su análisis.
 
 <!-- # desarrollo de idea clave 2 -->
