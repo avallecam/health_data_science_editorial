@@ -2,7 +2,12 @@
 title: "Ciencia de Datos en Salud: Aplicaciones en CDC Perú"
 author: "Andree Valle Campos, Candidato a Magíster en Ciencias de la Investigación Epidemiológica. Grupo de Trabajo en Investigación Epidemiológica y Evaluación de Intervenciones Sanitarias. (avallecam\\@gmail.com)"
 date: '`r Sys.Date()`'
-output: word_document
+output: 
+  word_document
+  # pdf_document: #why author in only one line?
+  #   latex_engine: pdflatex
+  #   keep_md: yes
+  #   keep_tex: yes
 bibliography: "20191208-cdc_editorial.bib"
 link-citations: yes
 csl: american-medical-association.csl
