@@ -6,3 +6,8 @@
 
 
 - Versión publicada [aquí](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwjlgbuMh_XmAhW_HLkGHaYaC4UQFjAAegQIAxAC&url=https%3A%2F%2Fwww.dge.gob.pe%2Fportal%2Fdocs%2Fvigilancia%2Fboletines%2F2019%2F49.pdf&usg=AOvVaw0dT-eIufygx3x0OKfsAmIS)
+
+## citar
+
+> Valle-Campos A. Ciencia de Datos en Salud: Aplicaciones en el Centro Nacional de Epidemiología,
+Prevención y Control de Enfermedades, Perú. Boletín Epidemiológico del Perú, 2019, 18(49), 1245. Disponible en https://avallecam.github.io/health_data_science_editorial/
