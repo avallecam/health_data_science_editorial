@@ -1,5 +1,11 @@
 # Ciencia de Datos en Salud: Aplicaciones en CDC Perú
 
+
+
+[![DOI](https://zenodo.org/badge/230774622.svg)](https://zenodo.org/badge/latestdoi/230774622)
+
+
+
 - __Leer en HTML con hipervínculos:__ [aquí](https://avallecam.github.io/health_data_science_editorial/20191208-cdc_editorial.html)
 
 - __En Rmd:__ [acá](https://github.com/avallecam/health_data_science_editorial/blob/master/20191208-cdc_editorial.Rmd)
