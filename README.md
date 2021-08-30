@@ -6,3 +6,5 @@
 
 
 - Versión publicada [aquí](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwjlgbuMh_XmAhW_HLkGHaYaC4UQFjAAegQIAxAC&url=https%3A%2F%2Fwww.dge.gob.pe%2Fportal%2Fdocs%2Fvigilancia%2Fboletines%2F2019%2F49.pdf&usg=AOvVaw0dT-eIufygx3x0OKfsAmIS)
+
+- __Hilo en twitter__ [aquí](https://twitter.com/avallecam/status/1226361840436961280)
